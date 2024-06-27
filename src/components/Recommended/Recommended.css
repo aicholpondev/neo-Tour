@@ -1,0 +1,40 @@
+#recommended{
+    width: 90%;
+    margin: 0 auto;
+}
+#recommended h2{
+    text-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+    color: black;
+    font-weight: 700;
+    font-size: 48px;
+    padding:70px 0 ;
+   margin-right: 980px;
+
+}
+.recommended-images {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.4rem;
+}
+.recommended-gallery-image {
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+    object-fit: contain;
+}
+.recommended-images-title{
+    position: absolute;
+    bottom: 0;
+    font-weight: bold;
+    padding: 18px;
+    background: rgba(255, 255, 255, 0.38);
+    width: 100%;
+    backdrop-filter: blur(8px);
+
+}
+.img{
+    width: 100%;
+
+}

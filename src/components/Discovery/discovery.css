@@ -1,0 +1,77 @@
+#discover-general h1{
+    text-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+    color: black;
+    font-weight: 700;
+    font-size: 48px;
+    margin-right: 1080px;
+    padding: 2rem;
+
+}
+
+.discovery_category {
+    padding: 10px;
+    margin: 10px;
+    width: 170px;
+    position: relative;
+    text-align: center;
+
+}
+
+.discovery_category:hover {
+    color: #6A62B7;
+    text-shadow: 0 4px 4px #00000040;
+    cursor: pointer;
+}
+
+.discovery_category:hover::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #6A62B7;
+    box-shadow: 0 4px 4px #00000040;
+    border-radius: 50%;
+}
+.discover_click{
+    margin: 0 20px 0 0 ;
+    padding: 15px 15px;
+    font-size: 20px;
+    color: black;
+    border-radius: 50%;
+    border: 2px solid #6A62B7;
+}
+.discover_click:hover{
+    color: white;
+    background: #6A62B7;
+}
+.gallery-img{
+    margin: 2.5rem  ;
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.4rem;
+}
+.gallery-img-slider{
+    object-fit: cover;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    aspect-ratio: 4 / 3;
+}
+.gallery-img-title{
+    position: absolute;
+    bottom: 0;
+    font-weight: bold;
+    padding: 18px;
+    background: rgba(255, 255, 255, 0.38);
+    backdrop-filter: blur(8px);
+
+    width: 100%;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
