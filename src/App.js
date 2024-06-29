@@ -1,16 +1,19 @@
 import './App.css';
-import HeaderCard from "./components/HeaderCard/HeaderCard";
-import Discover from "./components/Discovery/Discovery";
-import Recommended from "./components/Recommended/Recommended";
-// import Details from "./pages/Details/Details";
+import Home from"./pages/Home/Home";
+
+import Details from "./pages/Details/details";
+import {Route,Routes} from "react-router";
 
 function App() {
   return (
       <div className="App">
-        <HeaderCard/>
-        <Discover/>
-        <Recommended/>
-        {/*<Details/>*/}
+
+
+
+          <Routes>
+              <Route path="/" element={<Home/>}/>
+              <Route path="/:id" element={<Details/>}/>
+          </Routes>
       </div>
   );
 }

@@ -1,13 +1,14 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useEffect } from "react";
-import { getTours} from "../../api/api";
+import {getReview, getTours} from "../../api/api";
 // import axios from "axios";
 import img from "../../assets/image/mount.png";
 import "./Recommended.css";
 
 export default function Recommended() {
     const [tours, setTours] = useState([]);
+
 
     useEffect(() => {
         getTours()

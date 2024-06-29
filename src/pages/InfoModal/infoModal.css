@@ -1,0 +1,52 @@
+form{
+    width: 614px;
+    height: 700px;
+    border-radius: 16px;
+    border: 2px solid black;
+
+}
+.modal-info-close{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem 0;
+}
+.modal-info-close h2,button{
+    font-size: 30px;
+    font-weight: bold;
+
+}
+p{
+    font-size: 18px;
+    font-weight: 400;
+    width: 80%;
+    padding: 1.5rem 0;
+}
+.modal_input{
+    display: flex;
+    flex-direction: column;
+    font-size: 19px;
+    row-gap: 0.5rem;
+}
+input{
+    padding:  5px 10px  ;
+    border-radius: 100px;
+    border: 1px solid  #636363;
+    font-size: 1.8rem;
+}
+.submit-btn{
+    background-color: #6A62B7;
+    padding: 5px 30px;
+    color: white;
+    border-radius: 2.8rem;
+    cursor: pointer;
+
+}
+.btn-number{
+    background-color: #6A62B7;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 16px;
+    cursor: pointer;
+}
+

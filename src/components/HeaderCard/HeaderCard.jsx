@@ -9,17 +9,17 @@ export default function HeaderCard(){
 
     return(
         <section id="header">
-            <div className="header-general">
-                <div className=" ">
-                    <h1 className="font-bold text-8xl w-[660px] pt-28" >Winter <br/>Vacation Trips</h1>
-                    <p className="font-bold text-2xl w-2/4 p-[2rem]">Enjoy your winter vacations with warmth
+            <div className="header-general ">
+                <div className="header-general-text  ">
+                    <h1 className="font-bold text-8xl pt-28 pl-20" >Winter <br/>Vacation Trips</h1>
+                    <p className="font-normal text-2xl w-[60%] p-[2rem] pl-20">Enjoy your winter vacations with warmth
                         and amazing sightseeing on the mountains.
                         Enjoy the best experience with us!</p>
-                    <div className="flex items-center gap-4 text-3xl text-[#6A62B7]">
-                        <a href="#" className="header-button ">Let’s Go!  </a><FaArrowRightLong className="cursor-pointer"/>
+                    <div className="flex items-center  text-3xl text-[#6A62B7]">
+                        <a href="#recommended" className="header-button ">Let’s Go!  </a><FaArrowRightLong className="cursor-pointer"/>
                     </div>
                 </div>
-                <div className="header-image">
+                <div className="header-image pr-20 ">
                     <img src={img} alt="img"/>
                 </div>
             </div>
