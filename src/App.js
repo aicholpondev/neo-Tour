@@ -1,6 +1,5 @@
 import './App.css';
 import Home from"./pages/Home/Home";
-
 import Details from "./pages/Details/details";
 import {Route,Routes} from "react-router";
 

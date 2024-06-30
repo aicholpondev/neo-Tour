@@ -1,26 +1,27 @@
 form{
-    width: 614px;
-    height: 700px;
-    border-radius: 16px;
-    border: 2px solid black;
+    width: 60%;
+     margin: 0 auto;
+    background:white;
+    border-radius: 50px;
+    padding: 4rem;
+    border: 1px solid #6A62B7;
 
 }
 .modal-info-close{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 2rem 0;
 }
 .modal-info-close h2,button{
     font-size: 30px;
     font-weight: bold;
 
 }
-p{
+ .modal-info-close p{
     font-size: 18px;
     font-weight: 400;
-    width: 80%;
-    padding: 1.5rem 0;
+    width: 100%;
+     margin: 3rem 0;
 }
 .modal_input{
     display: flex;
@@ -29,24 +30,49 @@ p{
     row-gap: 0.5rem;
 }
 input{
-    padding:  5px 10px  ;
+    padding:  10px 90px  ;
     border-radius: 100px;
     border: 1px solid  #636363;
-    font-size: 1.8rem;
+    font-size: 1rem;
+
 }
+
 .submit-btn{
     background-color: #6A62B7;
-    padding: 5px 30px;
+    font-weight: 600;
+    padding: 5px 120px;
     color: white;
     border-radius: 2.8rem;
     cursor: pointer;
+    margin: 1.5rem 0;
 
 }
 .btn-number{
-    background-color: #6A62B7;
-    padding: 5px 10px;
+    background-color:#897CFF;
+    padding: 10px 15px;
     color: white;
     border-radius: 16px;
     cursor: pointer;
 }
+.info-number{
+    text-align: center;
+    font-size: 1px;
+    padding-left: 50px;
+}
+.modal-container h3{
+padding: 10px 40px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    color: #888888;
+}
+.info-comment input{
+ margin-right: -8px;
+}
+.modal-container{
+  left: 290px;
+    position: absolute;
+    top: 10px;
+}
+
 

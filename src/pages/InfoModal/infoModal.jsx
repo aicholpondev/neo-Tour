@@ -2,6 +2,7 @@ import { IoMdClose } from "react-icons/io";
 import "./infoModal.css"
 import {useState} from "react";
 import PhoneInput from 'react-phone-number-input';
+import Booking from "../BookLooking/BookLooking";
 
 
 export default function InfoModal(){
@@ -9,6 +10,7 @@ export default function InfoModal(){
     const [value, setValue] = useState();
     const [comments, setComments] = useState("");
     const [phoneNumber, setPhoneNumber] = useState("");
+    const [book,setBook] = useState(false);
 
 
 
@@ -20,7 +22,11 @@ export default function InfoModal(){
     }
     function decrement(event){
         event.preventDefault()
-        setNum(0)
+        setNum(num-1)
+    }
+
+    function showBook (){
+        setBook(true)
     }
 
 
@@ -37,56 +43,43 @@ export default function InfoModal(){
                     </div>
                     <p>To submit an application for a tour reservation, you need to fill in your information and select the number of people for the reservation</p>
 
-                    <label className="modal_input">
-                        Phone number
-                        <PhoneInput className=""
-                            international
-                            defaultCountry="KG"
-                            onChange={setValue}
-                            value={value}
-                        />
-                    </label>
-                    <label className="modal_input">
-                        Commentaries to trip
-                        <input
-                            type="text"
-                            placeholder="Write your wishes to trip..."
-                            onChange={(e) => setComments(e.target.value)}
-                        />
-                    </label>
-                    {/*<div className="info-number">*/}
-                    {/*    <h3>Phone number</h3>*/}
-                    {/*    <PhoneInput className="w-2 flex"*/}
 
-                    {/*        international={false}*/}
-                    {/*        defaultCountry="KG"*/}
-                    {/*        value={value}*/}
-                    {/*        onChange={setValue}/>*/}
-                    {/*</div>*/}
-                    {/*<div className="info-comment">*/}
-                    {/*    <h3>Commentaries to trip</h3>*/}
-                    {/*    <input type="text"*/}
-                    {/*           placeholder="Write your wishes to trip"/>*/}
-                    {/*</div>*/}
+                    <div className="info-number">
+                        <h3>Phone number</h3>
+                        < PhoneInput className="w-4 flex gap-2 items-center"
+
+                            international={false}
+                            defaultCountry="KG"
+                            value={value}
+                            onChange={setValue}/>
+                    </div>
+                    <div className="info-comment">
+                        <h3>Commentaries to trip</h3>
+                        <input type="text"
+                               placeholder="Write your wishes to trip"/>
+                    </div>
                     <div className="info-people">
                         <h3>Commentaries to trip</h3>
                     </div>
                     <center>
-                    <div className=" flex items-center  gap-6 ">
+                    <div className=" flex items-center  gap-6 ml-8">
 
                            <button className="btn-number" onClick={decrement}>-</button>
-                           <h4>{num}</h4>
+                           <h4 className="text-2xl font-bold">{num}</h4>
 
                            <button className="btn-number" onClick={increment}>+</button>
 
                     </div>
                     </center>
-                    <button className="submit-btn">SUBMIT</button>
-
+                    <button className="submit-btn" onClick={showBook}>SUBMIT</button>
+                    {
+                        book? <Booking/> : ""
+                    }
                 </form>
              </center>
 
             </div>
+
         </section>
     )
 

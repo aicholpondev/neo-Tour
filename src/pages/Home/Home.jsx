@@ -9,8 +9,7 @@ function Home() {
             <HeaderCard/>
             <Discover/>
             <Recommended/>
-            {/*<Details/>*/}
-            {/*  <Modal/>*/}
+
 
         </div>
     );

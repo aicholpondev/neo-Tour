@@ -2,8 +2,7 @@ import React from "react";
 import  "./HeaderCard.css"
 import { FaArrowRightLong } from "react-icons/fa6";
 import img from "../../assets/image/winter.png";
-// import axios from "axios";
-// import {useState,useEffect} from "react";
+
 
 export default function HeaderCard(){
 
