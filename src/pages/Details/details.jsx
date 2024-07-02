@@ -14,7 +14,7 @@ export default function Details(){
   const [modal,setModal]=useState(false)
   const {id} =useParams()
     useEffect(() => {
-        getTourById()
+        getTourById(id)
             .then (({data}) =>{
                 setDetails(data)
                 console.log(data)
